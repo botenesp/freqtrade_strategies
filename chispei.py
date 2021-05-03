@@ -4,6 +4,12 @@
 # The purpose is to test Freqtrade backtest provides like results to a known industry platform.
 #
 # --- Do not remove these libs ---
+#
+#
+#
+# - EDIT: "Maybe the sucess of a trading system is part of strategy and also a good config.son too!"
+#
+#
 from freqtrade.strategy.interface import IStrategy
 from pandas import DataFrame
 # --------------------------------
@@ -17,13 +23,17 @@ import numpy
 class chispei(IStrategy):
     # Minimal ROI designed for the strategy.
     minimal_roi = {
-        "40": 2.0,
-        "30": 2.01,
-        "20": 2.02,
-        "0": 2.04
+	    "5127": 0,
+	    "1836": 0.676,
+	    "2599": 0.079,
+        "120": 0.10,
+	    "60": 0.10,
+        "30": 0.05,
+        "20": 0.05,
+        "0": 0.04
     }
 
-    stoploss = -0.9
+    stoploss = -0.32336
     ticker_interval = '4h'
 
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
