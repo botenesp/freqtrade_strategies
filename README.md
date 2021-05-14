@@ -7,7 +7,13 @@ run with: *freqtrade backtesting -c config.json --strategy chispei --dry-run-wal
 
 (most probably with another config it will show other results, thanks)
 
-=============== SUMMARY METRICS ===============
+Donations: 0x17dac3A5bD18084Ab38a84d214FB9B1622dc5217
+
+Many many thanks! :)
+
+
+
+# SUMMARY METRICS 
 | Metric                | Value               |
 |-----------------------+---------------------|
 | Backtesting from      | 2021-04-01 16:00:00 |
@@ -48,3 +54,5 @@ run with: *freqtrade backtesting -c config.json --strategy chispei --dry-run-wal
 
 - EMASkipPump.py
 	- Same as chispei, improved results. ;)
+
+to be improved...
